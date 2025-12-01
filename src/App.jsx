@@ -63,9 +63,10 @@ function App() {
       <Footer />
 
       {/* Back to Top Button */}
+      {/* Back to Top Button */}
       <a
         href="#home"
-        className={`back-to-top ${showBackToTop ? 'active' : ''}`}
+        className={`fixed bottom-8 right-8 w-12 h-12 bg-teal-600 text-white rounded-full flex items-center justify-center text-xl shadow-lg hover:bg-teal-700 hover:-translate-y-1 transition-all duration-300 z-50 ${showBackToTop ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible translate-y-4'}`}
         id="backToTop"
         onClick={(e) => {
           e.preventDefault();
